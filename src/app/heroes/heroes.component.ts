@@ -13,8 +13,6 @@ export class HeroesComponent implements OnInit {
 
   constructor(private heroService: HeroService) { }
 
-  
-
   ngOnInit() {
     this.getHeroes();
   }
@@ -37,4 +35,5 @@ export class HeroesComponent implements OnInit {
     this.heroes = this.heroes.filter(h => h !== hero);
     this.heroService.deleteHero(hero.id).subscribe();
   }
+
 }
