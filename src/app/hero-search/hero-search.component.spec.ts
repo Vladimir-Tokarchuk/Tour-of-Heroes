@@ -23,3 +23,4 @@ describe('HeroSearchComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+ 
